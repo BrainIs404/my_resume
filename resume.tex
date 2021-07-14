@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Victor Ngo} \\ \vspace{1pt}
+    \small 0481994099 $|$ \href{mailto:tminhngvt1998@gmail.com}{\underline{tminhngvt1998@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/victor-ngo-768366147/}{\underline{Linkedin}} $|$
+    \href{https://github.com/BrainIs404}{\underline{Github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Queensland}{Brisbane, QLD}
+      {Bachelor of Information Technology}{Feb. 2018 -- Dec. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Instructor}{May 2019 -- Sep 2019}
+      {Junior Engineers}{Newmarket, QLD}
+      \resumeItemListStart
+        \resumeItem{Teach programming to children from elementary school and high school}
+        \resumeItem{Prepare teaching materials for the school term and holiday programs}
+        \resumeItem{Managing classroom of 10-20 students, and assists other instructor}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Kitchen hand}{Nov 2019 -- Feb 2020}
+      {Little Baguette}{Indooroopilly, QLD}
+      \resumeItemListStart
+        \resumeItem{Store stockpile management}
+        \resumeItem{Preparing food while maintaining health and safety standard in the kitchen}
+        \resumeItem{Assit FOH staff in serving food to customers}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+	\resumeProjectHeading
+          {\textbf{Vanquish Galactica} $|$ \emph{C\#, Unity}}{May 2021 -- May 2021}
+          \resumeItemListStart
+            \resumeItem{2D top down shooter game inspired by Alien Invaders in Unity and C\#}
+            \resumeItem{Implemented key gameplay mechanics}
+            \resumeItem{Developed the in-game UI}
+            \resumeItem{Managed a team of 3, 2 programmers and 1 artists from different timezone}
+          \resumeItemListEnd
+	\resumeProjectHeading
+          {\textbf{Lumen x Ombra} $|$ \emph{C\#, Unity}}{May 2021 -- May 2021}
+          \resumeItemListStart
+            \resumeItem{2D Platforming game built using Unity and C\#}
+            \resumeItem{Developed a sound system and interface for the game}
+            \resumeItem{Created 2D platforming levels}
+            \resumeItem{Collaborated with a team of 6 across different timezone to develop the game in Unity}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Questionnaire generator} $|$ \emph{JavaScript, JQuery, SMART on FHIR, HTML/CSS}}{Aug 2020 -- Nov 2020}
+          \resumeItemListStart
+            \resumeItem{Developed an EMR plugin for medical workers and patient to better manage questionnaire}
+            \resumeItem{Implemented questionnaire generator and form appearance from FHIR questionnaire format using JQuery}
+            \resumeItem{Format response data in FHIR format to provide in app feedback and further use}
+            \resumeItem{Received positive feedbacks from CSIRO and UQ School of Medicine}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Music Streaming Service} $|$ \emph{Node.js, MongoDB, Express.js, C++, HTML/CSS}}{Aug 2020 -- Nov 2020}
+          \resumeItemListStart 
+           \resumeItem{Developed a web service using NodeJS, ExpressJS and MongoDB, with Twitch integration}
+           \resumeItem{The website features online chat, Twitch stream integration and a voting system for users to vote on stream audio effects}
+            \resumeItem{Created the front-end using Bootstrap, NodeJS and JQuery}
+            \resumeItem{Implemented the back-end with ExpressJS and MongoDB, hosting on Glitch.io}
+          \resumeItemListEnd
+	\resumeProjectHeading
+          {\textbf{Minimum Dominating Set Finder} $|$ \emph{C, OpenMP, OpenMPI}}{Aug 2019 -- Nov 2019}
+          \resumeItemListStart
+            \resumeItem{Developed a heuristic program to solve the minimum dominating set problem in C}
+            \resumeItem{Used OpenMP and OpenMPI to add multi-threading and multi-processing capability }
+            \resumeItem{Improve runtime by ~22\%}
+          \resumeItemListEnd
+
+%	\resumeProjectHeading
+%          {\textbf{LWJGL Top-down Game} $|$ \emph{Java, LibGDX}}{Aug 2019 -- Nov 2019}
+%          \resumeItemListStart
+%            \resumeItem{Worked on a hexagon-based layout generator}
+%            \resumeItem{Improved player inventory system}
+%            \resumeItem{Developed a multiplayer lobby system}
+%            \resumeItem{Worked on the game's netcode}
+%          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, C\#, SQL (Postgres), JavaScript, HTML, CSS} \\
+     \textbf{Frameworks}{: Bootstrap, JQuery, Node.js, Express.js, JUnit, MongoDB, SMART on FHIR} \\
+     \textbf{Developer Tools}{: Git, Github, Subversion, Docker, VS Code, Visual Studio, IntelliJ, Unity, Trello, Google Colab} \\
+     \textbf{Libraries}{: NumPy, OpenMP, OpenMPI, LibGDX}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
