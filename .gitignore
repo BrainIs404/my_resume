@@ -2,3 +2,5 @@
 *.log
 *.out
 *.log
+*.fls
+*fdb_latexmk
